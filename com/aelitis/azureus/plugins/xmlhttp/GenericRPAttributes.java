@@ -246,8 +246,8 @@ public class GenericRPAttributes {
         }
         else if (obj_class == PluginInterface.class) {
             PluginInterface pi = (PluginInterface)object;
-            map.put("azureus_name",    Constants.AZUREUS_NAME);
-            map.put("azureus_version", Constants.AZUREUS_VERSION);
+            map.put("azureus_name",    Constants.APP_NAME);
+            map.put("azureus_version", Constants.getCurrentVersion());
             map.put("plugin_id",       pi.getPluginID());
             map.put("plugin_name",     pi.getPluginName());
         }
