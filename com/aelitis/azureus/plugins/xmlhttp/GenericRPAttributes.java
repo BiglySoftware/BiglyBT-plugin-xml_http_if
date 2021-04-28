@@ -87,7 +87,7 @@ public class GenericRPAttributes {
             map.put("max_upload_rate",     dload.getUploadRateLimitBytesPerSecond());
             map.put("position",            dload.getPosition());
             map.put("save_path",           dload.getSavePath());
-            map.put("seeding_rank",        dload.getSeedingRank());
+            map.put("seeding_rank",        dload.getSeedingRank().getRank());
             map.put("state",               dload.getState());
             map.put("sub_state",           dload.getSubState());
             map.put("torrent_file",        dload.getTorrentFileName());
